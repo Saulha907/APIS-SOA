@@ -1,0 +1,84 @@
+{
+  "cliente": {
+    "tipo": "CLIENTE",
+    "nombres": "Ana",
+    "apellidos": "Garcia Lopez",
+    "email": "ana.garcia@example.com",
+    "telefono": "+525512345678",
+    "fechaNacimiento": "1990-05-15",
+    "ine": "INE-ANA-001",
+    "direccion": "Av. Reforma 100, Ciudad de Mexico",
+    "password": "ClienteSegura123!",
+    "estatus": "ACTIVO"
+  },
+  "propiedad": {
+    "propietario": { "id": 1 },
+    "tipo": "APARTAMENTO",
+    "titulo": "Apartamento Centro",
+    "descripcion": "Apartamento amueblado cerca del centro historico.",
+    "direccion": "Calle Juarez 25",
+    "ciudad": "Ciudad de Mexico",
+    "estadoFederativo": "CDMX",
+    "codigoPostal": "06000",
+    "pais": "Mexico",
+    "latitud": 19.4326,
+    "longitud": -99.1332,
+    "precioNoche": 1250.00,
+    "capacidad": 4,
+    "numHabitaciones": 2,
+    "numBanos": 1,
+    "metrosCuadrados": 85,
+    "comodidades": "WiFi, cocina equipada, estacionamiento",
+    "reglas": "No fumar. No mascotas.",
+    "estado": "DISPONIBLE"
+  },
+  "propiedadImagen": {
+    "propiedad": { "idPropiedad": 1 },
+    "url": "https://images.example.com/apartamento-centro.jpg",
+    "descripcion": "Vista principal de la sala"
+  },
+  "unidadRentable": {
+    "propiedad": { "idPropiedad": 1 },
+    "nombre": "Unidad Centro 101",
+    "tipo": "APARTAMENTO_COMPLETO",
+    "capacidad": 4,
+    "precioNoche": 1250.00,
+    "estado": "DISPONIBLE"
+  },
+  "disponibilidad": {
+    "unidad": { "idUnidad": 1 },
+    "fechaInicio": "2026-10-01T00:00:00",
+    "fechaFin": "2026-12-31T23:59:59",
+    "disponible": true,
+    "precioEspecial": 1150.00
+  },
+  "reserva": {
+    "unidad": { "idUnidad": 1 },
+    "cliente": { "id": 1 },
+    "fechaEntrada": "2026-10-10T15:00:00",
+    "fechaSalida": "2026-10-15T11:00:00",
+    "estado": "PENDIENTE",
+    "comentario": "Llegada despues de las 15:00"
+  },
+  "pago": {
+    "reserva": { "idReservacion": 1 },
+    "importe": 6250.00,
+    "fechaVencimiento": "2026-10-05",
+    "metodo": "TRANSFERENCIA",
+    "estado": "PENDIENTE"
+  },
+  "resena": {
+    "reserva": { "idReservacion": 1 },
+    "cliente": { "id": 1 },
+    "calificacionGeneral": 5,
+    "calificacionComunicacion": 5,
+    "comentario": "Excelente estancia y comunicacion."
+  },
+  "notificacion": {
+    "remitente": { "id": 1 },
+    "destinatario": { "id": 1 },
+    "asunto": "Reserva recibida",
+    "mensaje": "Tu reserva fue registrada correctamente.",
+    "estado": "NO_LEIDA"
+  }
+}

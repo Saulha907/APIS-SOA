@@ -1,0 +1,12 @@
+{
+  "tipo": "CLIENTE",
+  "nombres": "Ana",
+  "apellidos": "Garcia Lopez",
+  "email": "ana.garcia@example.com",
+  "telefono": "+525512345678",
+  "fechaNacimiento": "1990-05-15",
+  "ine": "INE-ANA-001",
+  "direccion": "Av. Reforma 100, Ciudad de Mexico",
+  "password": "ClienteSegura123!",
+  "estatus": "ACTIVO"
+}

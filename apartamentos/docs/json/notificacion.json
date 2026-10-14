@@ -1,0 +1,11 @@
+{
+  "remitente": {
+    "id": 1
+  },
+  "destinatario": {
+    "id": 1
+  },
+  "asunto": "Reserva recibida",
+  "mensaje": "Tu reserva fue registrada correctamente.",
+  "estado": "NO_LEIDA"
+}

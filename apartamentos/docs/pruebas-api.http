@@ -1,0 +1,90 @@
+@baseUrl = http://localhost:8000
+@clienteId = 1
+@propiedadId = 1
+@unidadId = 1
+@reservaId = 1
+@pagoId = 1
+
+### 1. Crear cliente
+POST {{baseUrl}}/api/clientes
+Content-Type: application/json
+
+< ./json/cliente.json
+
+### 2. Listar clientes
+GET {{baseUrl}}/api/clientes
+
+### 3. Crear propiedad
+POST {{baseUrl}}/api/propiedades
+Content-Type: application/json
+
+< ./json/propiedad.json
+
+### 4. Listar propiedades
+GET {{baseUrl}}/api/propiedades
+
+### 5. Crear imagen de propiedad
+POST {{baseUrl}}/api/propiedad-imagenes
+Content-Type: application/json
+
+< ./json/propiedad-imagen.json
+
+### 6. Crear unidad rentable
+POST {{baseUrl}}/api/unidades
+Content-Type: application/json
+
+< ./json/unidad-rentable.json
+
+### 7. Listar unidades de una propiedad
+GET {{baseUrl}}/api/unidades/propiedad/{{propiedadId}}
+
+### 8. Crear disponibilidad
+POST {{baseUrl}}/api/disponibilidades
+Content-Type: application/json
+
+< ./json/disponibilidad.json
+
+### 9. Consultar disponibilidad de una unidad
+GET {{baseUrl}}/api/disponibilidades/unidad/{{unidadId}}
+
+### 10. Crear reserva
+POST {{baseUrl}}/api/reservas
+Content-Type: application/json
+
+< ./json/reserva.json
+
+### 11. Listar reservas
+GET {{baseUrl}}/api/reservas
+
+### 12. Crear pago pendiente
+POST {{baseUrl}}/api/pagos
+Content-Type: application/json
+
+< ./json/pago.json
+
+### 13. Listar pagos
+GET {{baseUrl}}/api/pagos
+
+### 14. Confirmar pago
+POST {{baseUrl}}/api/pagos/{{pagoId}}/confirmar
+
+### 15. Reembolsar pago
+POST {{baseUrl}}/api/pagos/{{pagoId}}/reembolsar
+
+### 16. Crear resena
+POST {{baseUrl}}/api/resenas
+Content-Type: application/json
+
+< ./json/resena.json
+
+### 17. Listar resenas de una reserva
+GET {{baseUrl}}/api/resenas/reserva/{{reservaId}}
+
+### 18. Crear notificacion
+POST {{baseUrl}}/api/notificaciones
+Content-Type: application/json
+
+< ./json/notificacion.json
+
+### 19. Listar notificaciones de un destinatario
+GET {{baseUrl}}/api/notificaciones/destinatario/{{clienteId}}

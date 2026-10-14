@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AlquilaYa | Panel de gestión</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">A</span><div><strong>AlquilaYa</strong><small>Gestión de vehículos</small></div></div>
+    <div class="nav-label">MENÚ PRINCIPAL</div>
+    <nav id="navigation" aria-label="Secciones"><button data-view="inicio" class="active">▦ <span>Resumen</span></button><button data-view="clientes">♙ <span>Clientes</span></button><button data-view="oficinas">⌂ <span>Oficinas</span></button><button data-view="vehiculos">▰ <span>Vehículos</span></button><button data-view="alquileres">▤ <span>Alquileres</span></button><button data-view="mantenimientos">⚒ <span>Mantenimientos</span></button></nav>
+    <div class="sidebar-bottom"><span class="online"></span> Conectado a Spring Boot <form action="/logout" method="post"><button class="logout" type="submit">Cerrar sesión ↗</button></form></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><span class="eyebrow">PANEL ADMINISTRATIVO</span><h1 id="page-title">Resumen general</h1><p id="page-subtitle">Información de tu operación en un solo lugar.</p></div><div class="header-actions"><button id="reload" class="btn btn-light">↻ Actualizar</button><div class="avatar">AY</div></div></header>
+    <div id="alert" role="status" aria-live="polite" hidden></div>
+    <section id="dashboard"><div id="metrics" class="metrics"></div><div class="welcome"><div class="welcome-text"><span class="eyebrow">OPERACIÓN ALQUILAYA</span><h2>Administra tu flota fácilmente</h2><p>Registra oficinas, clientes y vehículos. Crea alquileres con cálculo automático y lleva el control de mantenimiento.</p><button id="start-rental" class="btn btn-primary">Nuevo alquiler →</button></div><div class="hero-illustration"><div class="car-shape">🚘</div><span>Tu negocio, bajo control.</span></div></div><div class="section-heading"><h2>Accesos rápidos</h2></div><div class="quick-grid"><button data-shortcut="clientes">+ Registrar cliente</button><button data-shortcut="vehiculos">+ Registrar vehículo</button><button data-shortcut="oficinas">+ Registrar oficina</button><button data-shortcut="mantenimientos">+ Registrar mantenimiento</button></div></section>
+    <section id="module" hidden><div class="toolbar"><div><h2 id="module-title"></h2><p id="module-desc"></p></div><button class="btn btn-primary" id="create">+ Nuevo registro</button></div><div class="table-card"><div class="table-top"><label class="search-label"><span>⌕</span><input id="search" placeholder="Buscar en la tabla…" autocomplete="off"></label><span id="item-count" class="count"></span></div><div class="table-wrap"><table><thead id="table-head"></thead><tbody id="table-body"></tbody></table></div><div id="empty" class="empty" hidden>No hay registros para mostrar.</div></div></section>
+  </main>
+</div>
+<div id="modal" class="modal-backdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-header"><div><span class="eyebrow">ALQUILAYA</span><h2 id="modal-title">Nuevo registro</h2></div><button id="close-modal" class="icon-btn" aria-label="Cerrar">×</button></div><form id="record-form"><div id="form-fields" class="form-grid"></div><div class="modal-footer"><button type="button" class="btn btn-light" id="cancel-modal">Cancelar</button><button type="submit" class="btn btn-primary" id="save">Guardar registro</button></div></form></div></div>
+<script src="/app.js" defer></script>
+</body></html>

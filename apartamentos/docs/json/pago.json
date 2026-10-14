@@ -1,0 +1,9 @@
+{
+  "reserva": {
+    "idReservacion": 1
+  },
+  "importe": 6250.00,
+  "fechaVencimiento": "2026-10-05",
+  "metodo": "TRANSFERENCIA",
+  "estado": "PENDIENTE"
+}

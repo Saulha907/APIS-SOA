@@ -1,0 +1,11 @@
+{
+  "reserva": {
+    "idReservacion": 1
+  },
+  "cliente": {
+    "id": 1
+  },
+  "calificacionGeneral": 5,
+  "calificacionComunicacion": 5,
+  "comentario": "Excelente estancia y comunicacion."
+}

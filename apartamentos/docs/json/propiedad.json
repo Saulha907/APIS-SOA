@@ -1,0 +1,23 @@
+{
+  "propietario": {
+    "id": 1
+  },
+  "tipo": "APARTAMENTO",
+  "titulo": "Apartamento Centro",
+  "descripcion": "Apartamento amueblado cerca del centro historico.",
+  "direccion": "Calle Juarez 25",
+  "ciudad": "Ciudad de Mexico",
+  "estadoFederativo": "CDMX",
+  "codigoPostal": "06000",
+  "pais": "Mexico",
+  "latitud": 19.4326,
+  "longitud": -99.1332,
+  "precioNoche": 1250.00,
+  "capacidad": 4,
+  "numHabitaciones": 2,
+  "numBanos": 1,
+  "metrosCuadrados": 85,
+  "comodidades": "WiFi, cocina equipada, estacionamiento",
+  "reglas": "No fumar. No mascotas.",
+  "estado": "DISPONIBLE"
+}

@@ -1,0 +1,10 @@
+{
+  "propiedad": {
+    "idPropiedad": 1
+  },
+  "nombre": "Unidad Centro 101",
+  "tipo": "APARTAMENTO_COMPLETO",
+  "capacidad": 4,
+  "precioNoche": 1250.00,
+  "estado": "DISPONIBLE"
+}
